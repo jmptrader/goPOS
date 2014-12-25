@@ -1,0 +1,907 @@
+{
+    "fields": [
+        {
+            "id": 0,
+            "length": 4,
+            "name": "MESSAGE TYPE INDICATOR",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 1,
+            "length": 16,
+            "name": "BIT MAP",
+            "type": "FA_BITMAP",
+            "pad": false
+        },
+        {
+            "id": 2,
+            "length": 19,
+            "name": "PAN - PRIMARY ACCOUNT NUMBER",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 3,
+            "length": 6,
+            "name": "PROCESSING CODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 4,
+            "length": 12,
+            "name": "AMOUNT, TRANSACTION",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 5,
+            "length": 12,
+            "name": "AMOUNT, SETTLEMENT",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 6,
+            "length": 12,
+            "name": "AMOUNT, CARDHOLDER BILLING",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 7,
+            "length": 10,
+            "name": "TRANSMISSION DATE AND TIME",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 8,
+            "length": 8,
+            "name": "AMOUNT, CARDHOLDER BILLING FEE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 9,
+            "length": 8,
+            "name": "CONVERSION RATE, SETTLEMENT",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 10,
+            "length": 8,
+            "name": "CONVERSION RATE, CARDHOLDER BILLING",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 11,
+            "length": 6,
+            "name": "SYSTEM TRACE AUDIT NUMBER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 12,
+            "length": 6,
+            "name": "TIME, LOCAL TRANSACTION",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 13,
+            "length": 4,
+            "name": "DATE, LOCAL TRANSACTION",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 14,
+            "length": 4,
+            "name": "DATE, EXPIRATION",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 15,
+            "length": 4,
+            "name": "DATE, SETTLEMENT",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 16,
+            "length": 4,
+            "name": "DATE, CONVERSION",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 17,
+            "length": 4,
+            "name": "DATE, CAPTURE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 18,
+            "length": 4,
+            "name": "MERCHANTS TYPE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 19,
+            "length": 3,
+            "name": "ACQUIRING INSTITUTION COUNTRY CODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 20,
+            "length": 3,
+            "name": "PAN EXTENDED COUNTRY CODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 21,
+            "length": 3,
+            "name": "FORWARDING INSTITUTION COUNTRY CODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 22,
+            "length": 3,
+            "name": "POINT OF SERVICE ENTRY MODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 23,
+            "length": 3,
+            "name": "CARD SEQUENCE NUMBER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 24,
+            "length": 3,
+            "name": "NETWORK INTERNATIONAL IDENTIFIEER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 25,
+            "length": 2,
+            "name": "POINT OF SERVICE CONDITION CODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 26,
+            "length": 2,
+            "name": "POINT OF SERVICE PIN CAPTURE CODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 27,
+            "length": 1,
+            "name": "AUTHORIZATION IDENTIFICATION RESP LEN",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 28,
+            "length": 9,
+            "name": "AMOUNT, TRANSACTION FEE",
+            "type": "FA_AMOUNT",
+            "pad": false
+        },
+        {
+            "id": 29,
+            "length": 9,
+            "name": "AMOUNT, SETTLEMENT FEE",
+            "type": "FA_AMOUNT",
+            "pad": false
+        },
+        {
+            "id": 30,
+            "length": 9,
+            "name": "AMOUNT, TRANSACTION PROCESSING FEE",
+            "type": "FA_AMOUNT",
+            "pad": false
+        },
+        {
+            "id": 31,
+            "length": 9,
+            "name": "AMOUNT, SETTLEMENT PROCESSING FEE",
+            "type": "FA_AMOUNT",
+            "pad": false
+        },
+        {
+            "id": 32,
+            "length": 11,
+            "name": "ACQUIRING INSTITUTION IDENT CODE",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 33,
+            "length": 11,
+            "name": "FORWARDING INSTITUTION IDENT CODE",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 34,
+            "length": 28,
+            "name": "PAN EXTENDED",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 35,
+            "length": 37,
+            "name": "TRACK 2 DATA",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 36,
+            "length": 104,
+            "name": "TRACK 3 DATA",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 37,
+            "length": 12,
+            "name": "RETRIEVAL REFERENCE NUMBER",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 38,
+            "length": 6,
+            "name": "AUTHORIZATION IDENTIFICATION RESPONSE",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 39,
+            "length": 2,
+            "name": "RESPONSE CODE",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 40,
+            "length": 3,
+            "name": "SERVICE RESTRICTION CODE",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 41,
+            "length": 8,
+            "name": "CARD ACCEPTOR TERMINAL IDENTIFICACION",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 42,
+            "length": 15,
+            "name": "CARD ACCEPTOR IDENTIFICATION CODE",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 43,
+            "length": 40,
+            "name": "CARD ACCEPTOR NAME/LOCATION",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 44,
+            "length": 25,
+            "name": "ADITIONAL RESPONSE DATA",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 45,
+            "length": 76,
+            "name": "TRACK 1 DATA",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 46,
+            "length": 999,
+            "name": "ADITIONAL DATA - ISO",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 47,
+            "length": 999,
+            "name": "ADITIONAL DATA - NATIONAL",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 48,
+            "length": 999,
+            "name": "ADITIONAL DATA - PRIVATE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 49,
+            "length": 3,
+            "name": "CURRENCY CODE, TRANSACTION",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 50,
+            "length": 3,
+            "name": "CURRENCY CODE, SETTLEMENT",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 51,
+            "length": 3,
+            "name": "CURRENCY CODE, CARDHOLDER BILLING",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 52,
+            "length": 8,
+            "name": "PIN DATA",
+            "type": "FA_BINARY",
+            "pad": false
+        },
+        {
+            "id": 53,
+            "length": 16,
+            "name": "SECURITY RELATED CONTROL INFORMATION",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 54,
+            "length": 120,
+            "name": "ADDITIONAL AMOUNTS",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 55,
+            "length": 999,
+            "name": "RESERVED ISO",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 56,
+            "length": 999,
+            "name": "RESERVED ISO",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 57,
+            "length": 999,
+            "name": "RESERVED NATIONAL",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 58,
+            "length": 999,
+            "name": "RESERVED NATIONAL",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 59,
+            "length": 999,
+            "name": "RESERVED NATIONAL",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 60,
+            "length": 999,
+            "name": "RESERVED PRIVATE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 61,
+            "length": 999,
+            "name": "RESERVED PRIVATE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 62,
+            "length": 999,
+            "name": "RESERVED PRIVATE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 63,
+            "length": 999,
+            "name": "RESERVED PRIVATE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 64,
+            "length": 8,
+            "name": "MESSAGE AUTHENTICATION CODE FIELD",
+            "type": "FA_BINARY",
+            "pad": false
+        },
+        {
+            "id": 65,
+            "length": 1,
+            "name": "BITMAP, EXTENDED",
+            "type": "FA_BINARY",
+            "pad": false
+        },
+        {
+            "id": 66,
+            "length": 1,
+            "name": "SETTLEMENT CODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 67,
+            "length": 2,
+            "name": "EXTENDED PAYMENT CODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 68,
+            "length": 3,
+            "name": "RECEIVING INSTITUTION COUNTRY CODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 69,
+            "length": 3,
+            "name": "SETTLEMENT INSTITUTION COUNTRY CODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 70,
+            "length": 3,
+            "name": "NETWORK MANAGEMENT INFORMATION CODE",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 71,
+            "length": 4,
+            "name": "MESSAGE NUMBER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 72,
+            "length": 4,
+            "name": "MESSAGE NUMBER LAST",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 73,
+            "length": 6,
+            "name": "DATE ACTION",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 74,
+            "length": 10,
+            "name": "CREDITS NUMBER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 75,
+            "length": 10,
+            "name": "CREDITS REVERSAL NUMBER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 76,
+            "length": 10,
+            "name": "DEBITS NUMBER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 77,
+            "length": 10,
+            "name": "DEBITS REVERSAL NUMBER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 78,
+            "length": 10,
+            "name": "TRANSFER NUMBER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 79,
+            "length": 10,
+            "name": "TRANSFER REVERSAL NUMBER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 80,
+            "length": 10,
+            "name": "INQUIRIES NUMBER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 81,
+            "length": 10,
+            "name": "AUTHORIZATION NUMBER",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 82,
+            "length": 12,
+            "name": "CREDITS, PROCESSING FEE AMOUNT",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 83,
+            "length": 12,
+            "name": "CREDITS, TRANSACTION FEE AMOUNT",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 84,
+            "length": 12,
+            "name": "DEBITS, PROCESSING FEE AMOUNT",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 85,
+            "length": 12,
+            "name": "DEBITS, TRANSACTION FEE AMOUNT",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 86,
+            "length": 16,
+            "name": "CREDITS, AMOUNT",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 87,
+            "length": 16,
+            "name": "CREDITS, REVERSAL AMOUNT",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 88,
+            "length": 16,
+            "name": "DEBITS, AMOUNT",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 89,
+            "length": 16,
+            "name": "DEBITS, REVERSAL AMOUNT",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 90,
+            "length": 42,
+            "name": "ORIGINAL DATA ELEMENTS",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 91,
+            "length": 1,
+            "name": "FILE UPDATE CODE",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 92,
+            "length": 2,
+            "name": "FILE SECURITY CODE",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 93,
+            "length": 6,
+            "name": "RESPONSE INDICATOR",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 94,
+            "length": 7,
+            "name": "SERVICE INDICATOR",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 95,
+            "length": 42,
+            "name": "REPLACEMENT AMOUNTS",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 96,
+            "length": 16,
+            "name": "MESSAGE SECURITY CODE",
+            "type": "FA_BINARY",
+            "pad": false
+        },
+        {
+            "id": 97,
+            "length": 17,
+            "name": "AMOUNT, NET SETTLEMENT",
+            "type": "FA_AMOUNT",
+            "pad": false
+        },
+        {
+            "id": 98,
+            "length": 25,
+            "name": "PAYEE",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 99,
+            "length": 11,
+            "name": "SETTLEMENT INSTITUTION IDENT CODE",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 100,
+            "length": 11,
+            "name": "RECEIVING INSTITUTION IDENT CODE",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 101,
+            "length": 17,
+            "name": "FILE NAME",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 102,
+            "length": 28,
+            "name": "ACCOUNT IDENTIFICATION 1",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 103,
+            "length": 28,
+            "name": "ACCOUNT IDENTIFICATION 2",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 104,
+            "length": 100,
+            "name": "TRANSACTION DESCRIPTION",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 105,
+            "length": 999,
+            "name": "RESERVED ISO USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 106,
+            "length": 999,
+            "name": "RESERVED ISO USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 107,
+            "length": 999,
+            "name": "RESERVED ISO USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 108,
+            "length": 999,
+            "name": "RESERVED ISO USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 109,
+            "length": 999,
+            "name": "RESERVED ISO USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 110,
+            "length": 999,
+            "name": "RESERVED ISO USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 111,
+            "length": 999,
+            "name": "RESERVED ISO USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 112,
+            "length": 999,
+            "name": "RESERVED NATIONAL USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 113,
+            "length": 999,
+            "name": "RESERVED NATIONAL USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 114,
+            "length": 999,
+            "name": "RESERVED NATIONAL USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 115,
+            "length": 999,
+            "name": "RESERVED NATIONAL USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 116,
+            "length": 999,
+            "name": "RESERVED NATIONAL USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 117,
+            "length": 999,
+            "name": "RESERVED NATIONAL USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 118,
+            "length": 999,
+            "name": "RESERVED NATIONAL USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 119,
+            "length": 999,
+            "name": "RESERVED NATIONAL USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 120,
+            "length": 999,
+            "name": "RESERVED PRIVATE USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 121,
+            "length": 999,
+            "name": "RESERVED PRIVATE USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 122,
+            "length": 999,
+            "name": "RESERVED PRIVATE USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 123,
+            "length": 999,
+            "name": "RESERVED PRIVATE USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 124,
+            "length": 999,
+            "name": "RESERVED PRIVATE USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 125,
+            "length": 999,
+            "name": "RESERVED PRIVATE USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 126,
+            "length": 999,
+            "name": "RESERVED PRIVATE USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 127,
+            "length": 999,
+            "name": "RESERVED PRIVATE USE",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 128,
+            "length": 8,
+            "name": "MAC 2",
+            "type": "FA_BINARY",
+            "pad": false
+        }
+    ]
+}

@@ -1,0 +1,907 @@
+{
+    "fields": [
+        {
+            "id": 0,
+            "length": 4,
+            "name": "Message Type Indicator",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 1,
+            "length": 16,
+            "name": "Bitmap",
+            "type": "FA_BITMAP",
+            "pad": false
+        },
+        {
+            "id": 2,
+            "length": 19,
+            "name": "Primary Account number",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 3,
+            "length": 6,
+            "name": "Processing Code",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 4,
+            "length": 12,
+            "name": "Amount, Transaction",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 5,
+            "length": 12,
+            "name": "Amount, Reconciliation",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 6,
+            "length": 12,
+            "name": "Amount, Cardholder billing",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 7,
+            "length": 10,
+            "name": "Date and time, transmission",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 8,
+            "length": 8,
+            "name": "Amount, Cardholder billing fee",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 9,
+            "length": 8,
+            "name": "Conversion rate, Reconciliation",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 10,
+            "length": 8,
+            "name": "Conversion rate, Cardholder billing",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 11,
+            "length": 6,
+            "name": "Systems trace audit number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 12,
+            "length": 12,
+            "name": "Date and time, Local transaction",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 13,
+            "length": 4,
+            "name": "Date, Effective",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 14,
+            "length": 4,
+            "name": "Date, Expiration",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 15,
+            "length": 6,
+            "name": "Date, Settlement",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 16,
+            "length": 4,
+            "name": "Date, Conversion",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 17,
+            "length": 4,
+            "name": "Date, Capture",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 18,
+            "length": 4,
+            "name": "Merchant type",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 19,
+            "length": 3,
+            "name": "Country code, Acquiring institution",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 20,
+            "length": 3,
+            "name": "Country code, Primary account number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 21,
+            "length": 3,
+            "name": "Country code, Forwarding institution",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 22,
+            "length": 12,
+            "name": "Point of service data code",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 23,
+            "length": 3,
+            "name": "Card sequence number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 24,
+            "length": 3,
+            "name": "Function code",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 25,
+            "length": 4,
+            "name": "Message reason code",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 26,
+            "length": 4,
+            "name": "Card acceptor business code",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 27,
+            "length": 1,
+            "name": "Approval code length",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 28,
+            "length": 6,
+            "name": "Date, Reconciliation",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 29,
+            "length": 3,
+            "name": "Reconciliation indicator",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 30,
+            "length": 24,
+            "name": "Amounts, original",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 31,
+            "length": 99,
+            "name": "Acquirer reference data",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 32,
+            "length": 11,
+            "name": "Acquirer institution identification code",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 33,
+            "length": 11,
+            "name": "Forwarding institution identification code",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 34,
+            "length": 28,
+            "name": "Primary account number, extended",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 35,
+            "length": 37,
+            "name": "Track 2 data",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 36,
+            "length": 104,
+            "name": "Track 3 data",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 37,
+            "length": 12,
+            "name": "Retrieval reference number",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 38,
+            "length": 6,
+            "name": "Approval code",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 39,
+            "length": 3,
+            "name": "Action code",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 40,
+            "length": 3,
+            "name": "Service code",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 41,
+            "length": 8,
+            "name": "Card acceptor terminal identification",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 42,
+            "length": 15,
+            "name": "Card acceptor identification code",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 43,
+            "length": 99,
+            "name": "Card acceptor name/location",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 44,
+            "length": 99,
+            "name": "Additional response data",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 45,
+            "length": 76,
+            "name": "Track 1 data",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 46,
+            "length": 204,
+            "name": "Amounts, Fees",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 47,
+            "length": 999,
+            "name": "Additional data - national",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 48,
+            "length": 999,
+            "name": "Additional data - private",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 49,
+            "length": 3,
+            "name": "Currency code, Transaction",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 50,
+            "length": 3,
+            "name": "Currency code, Reconciliation",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 51,
+            "length": 3,
+            "name": "Currency code, Cardholder billing",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 52,
+            "length": 8,
+            "name": "Personal identification number [PIN] data",
+            "type": "FA_BINARY",
+            "pad": false
+        },
+        {
+            "id": 53,
+            "length": 48,
+            "name": "Security related control information",
+            "type": "FA_LLBINARY",
+            "pad": false
+        },
+        {
+            "id": 54,
+            "length": 120,
+            "name": "Amounts, additional",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 55,
+            "length": 255,
+            "name": "IC card system related data",
+            "type": "FA_LLLBINARY",
+            "pad": false
+        },
+        {
+            "id": 56,
+            "length": 35,
+            "name": "Original data elements",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 57,
+            "length": 3,
+            "name": "Authorization life cycle code",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 58,
+            "length": 11,
+            "name": "Authorizing agent institution Id Code",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 59,
+            "length": 999,
+            "name": "Transport data",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 60,
+            "length": 999,
+            "name": "Reserved for national use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 61,
+            "length": 999,
+            "name": "Reserved for national use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 62,
+            "length": 999,
+            "name": "Reserved for private use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 63,
+            "length": 999,
+            "name": "Reserved for private use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 64,
+            "length": 8,
+            "name": "Message authentication code field",
+            "type": "FA_BINARY",
+            "pad": false
+        },
+        {
+            "id": 65,
+            "length": 8,
+            "name": "Reserved for ISO use",
+            "type": "FA_BINARY",
+            "pad": false
+        },
+        {
+            "id": 66,
+            "length": 204,
+            "name": "Amounts, original fees",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 67,
+            "length": 2,
+            "name": "Extended payment data",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 68,
+            "length": 3,
+            "name": "Country code, receiving institution",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 69,
+            "length": 3,
+            "name": "Country code, settlement institution",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 70,
+            "length": 3,
+            "name": "Country code, authorizing agent Inst.",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 71,
+            "length": 8,
+            "name": "Message number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 72,
+            "length": 999,
+            "name": "Data record",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 73,
+            "length": 6,
+            "name": "Date, action",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 74,
+            "length": 10,
+            "name": "Credits, number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 75,
+            "length": 10,
+            "name": "Credits, reversal number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 76,
+            "length": 10,
+            "name": "Debits, number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 77,
+            "length": 10,
+            "name": "Debits, reversal number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 78,
+            "length": 10,
+            "name": "Transfer, number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 79,
+            "length": 10,
+            "name": "Transfer, reversal number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 80,
+            "length": 10,
+            "name": "Inquiries, number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 81,
+            "length": 10,
+            "name": "Authorizations, number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 82,
+            "length": 10,
+            "name": "Inquiries, reversal number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 83,
+            "length": 10,
+            "name": "Payments, number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 84,
+            "length": 10,
+            "name": "Payments, reversal number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 85,
+            "length": 10,
+            "name": "Fee collections, number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 86,
+            "length": 16,
+            "name": "Credits, amount",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 87,
+            "length": 16,
+            "name": "Credits, reversal amount",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 88,
+            "length": 16,
+            "name": "Debits, amount",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 89,
+            "length": 16,
+            "name": "Debits, reversal amount",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 90,
+            "length": 10,
+            "name": "Authorizations, reversal number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 91,
+            "length": 3,
+            "name": "Country code, transaction Dest. Inst.",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 92,
+            "length": 3,
+            "name": "Country code, transaction Orig. Inst.",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 93,
+            "length": 11,
+            "name": "Transaction Dest. Inst. Id code",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 94,
+            "length": 11,
+            "name": "Transaction Orig. Inst. Id code",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 95,
+            "length": 99,
+            "name": "Card issuer reference data",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 96,
+            "length": 999,
+            "name": "Key management data",
+            "type": "FA_LLLBINARY",
+            "pad": false
+        },
+        {
+            "id": 97,
+            "length": 17,
+            "name": "Amount, Net reconciliation",
+            "type": "FA_AMOUNT",
+            "pad": false
+        },
+        {
+            "id": 98,
+            "length": 25,
+            "name": "Payee",
+            "type": "F_CHAR",
+            "pad": false
+        },
+        {
+            "id": 99,
+            "length": 11,
+            "name": "Settlement institution Id code",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 100,
+            "length": 11,
+            "name": "Receiving institution Id code",
+            "type": "FA_LLNUM",
+            "pad": false
+        },
+        {
+            "id": 101,
+            "length": 17,
+            "name": "File name",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 102,
+            "length": 28,
+            "name": "Account identification 1",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 103,
+            "length": 28,
+            "name": "Account identification 2",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 104,
+            "length": 100,
+            "name": "Transaction description",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 105,
+            "length": 16,
+            "name": "Credits, Chargeback amount",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 106,
+            "length": 16,
+            "name": "Debits, Chargeback amount",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 107,
+            "length": 10,
+            "name": "Credits, Chargeback number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 108,
+            "length": 10,
+            "name": "Debits, Chargeback number",
+            "type": "FA_NUMERIC",
+            "pad": false
+        },
+        {
+            "id": 109,
+            "length": 84,
+            "name": "Credits, Fee amounts",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 110,
+            "length": 84,
+            "name": "Debits, Fee amounts",
+            "type": "FA_LLCHAR",
+            "pad": false
+        },
+        {
+            "id": 111,
+            "length": 999,
+            "name": "Reserved for ISO use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 112,
+            "length": 999,
+            "name": "Reserved for ISO use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 113,
+            "length": 999,
+            "name": "Reserved for ISO use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 114,
+            "length": 999,
+            "name": "Reserved for ISO use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 115,
+            "length": 999,
+            "name": "Reserved for ISO use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 116,
+            "length": 999,
+            "name": "Reserved for national use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 117,
+            "length": 999,
+            "name": "Reserved for national use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 118,
+            "length": 999,
+            "name": "Reserved for national use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 119,
+            "length": 999,
+            "name": "Reserved for national use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 120,
+            "length": 999,
+            "name": "Reserved for national use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 121,
+            "length": 999,
+            "name": "Reserved for national use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 122,
+            "length": 999,
+            "name": "Reserved for national use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 123,
+            "length": 999,
+            "name": "Reserved for private use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 124,
+            "length": 999,
+            "name": "Reserved for private use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 125,
+            "length": 999,
+            "name": "Reserved for private use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 126,
+            "length": 999,
+            "name": "Reserved for private use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 127,
+            "length": 999,
+            "name": "Reserved for private use",
+            "type": "FA_LLLCHAR",
+            "pad": false
+        },
+        {
+            "id": 128,
+            "length": 8,
+            "name": "Message authentication code field",
+            "type": "FA_BINARY",
+            "pad": false
+        }
+    ]
+}
