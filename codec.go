@@ -114,12 +114,6 @@ func dec2bcd(valInt uint64) ([]byte, error) {
 }
 
 func bcd2dec(bcd []byte) (uint64, error) {
-	// var intStr string
-	// fmt.Println("==>>",hex.EncodeToString(bcd))
-	// for _, b := range bcd {
-	// intStr += fmt.Sprintf("%x%x", (b&0xf0)>>4, b&0x0f) //hi,low
-	// }
-
 	ri, err := strconv.ParseInt(hex.EncodeToString(bcd), 10, 64)
 	if err != nil {
 		return 0, err
